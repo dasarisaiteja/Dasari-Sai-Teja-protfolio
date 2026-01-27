@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Teja Dasari | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Profile Selector -->
+    <div id="profile-selector" class="profile-selector">
+        <h1>Who's viewing?</h1>
+        <div class="profile-container">
+            <div class="profile-card" onclick="loadProfile('mern')">
+                <div class="avatar mern-bg">
+                    <i class="fab fa-react"></i>
+                </div>
+                <span>MERN Stack</span>
+            </div>
+            <div class="profile-card" onclick="loadProfile('python')">
+                <div class="avatar python-bg">
+                    <i class="fab fa-python"></i>
+                </div>
+                <span>Python Dev</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        <nav class="navbar" id="navbar">
+            <div class="logo">SAI TEJA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="exit-btn" onclick="exitProfile()"><i class="fas fa-sign-out-alt"></i> Exit</li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2 id="dynamic-title">Full Stack Developer</h2>
+                <p id="hero-desc">Adaptable, strategic learner with a collaborative mindset.</p>
+                <div class="button-group">
+                    <button class="cta-btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-play"></i> View Projects
+                    </button>
+                    <a href="https://drive.google.com/file/d/1pKS7iTl3pPN7QJXX1INhgalsbFBy4CdM/view?usp=sharing" target="_blank" class="info-btn">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <h2>About Me</h2>
+            <p>Completed my B.Tech in CSE (AIML) at Malla Reddy Engineering College. I thrive in fast-paced environments, constantly learning and adapting to new technologies. My passion lies in building scalable solutions and exploring the intersection of web development and artificial intelligence. With a strong foundation in both frontend and backend technologies, I bring ideas to life through clean, efficient code.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-scroll-container">
+                <div id="skills-grid" class="skills-grid"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Featured Projects</h2>
+            <div id="projects-grid" class="projects-grid"></div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="profile-intro">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="Screenshot 2026-01-27 at 11.38.17.png" alt="">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Sai Teja Dasari</h2>
+                            <h3 id="contact-title">Full Stack Developer</h3>
+                            <p id="contact-desc">With expertise in modern web technologies, skilled in MERN stack, Python, and AI/ML. Passionate about building innovative solutions.</p>
+                            <a href="http://linkedin.com/in/saiteja-dasari-95152324b" target="_blank" class="linkedin-btn">
+                                <i class="fab fa-linkedin"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="contact-intro">I'm always up for a chat or a coffee! Feel free to reach out.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">dasarisaiteja210@gmail.com</div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">+91 9505616404</div>
+                    </div>
+                </div>
+
+                <p class="coffee-text">Or catch up over a coffee ☕ 🍵</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Sai Teja Dasari. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
