@@ -1,78 +1,50 @@
 const data = {
     mern: {
-        title: "MERN Stack Developer",
-        desc: "Crafting seamless web experiences with React, Node.js, and modern JavaScript",
+        title: "Full-Stack Developer",
+        desc: "Building reliable web and mobile products with React, Node.js, and modern JavaScript",
         skills: [
-            { name: "React", icon: "fab fa-react", desc: "Frontend Framework" },
-            { name: "Node.js", icon: "fab fa-node-js", desc: "Backend Runtime" },
-            { name: "Express", icon: "fas fa-server", desc: "Backend Framework" },
-            { name: "MongoDB", icon: "fas fa-database", desc: "NoSQL Database" },
-            { name: "Redux", icon: "fas fa-layer-group", desc: "State Management" },
-            { name: "JWT", icon: "fas fa-shield-alt", desc: "Authentication" },
-            { name: "REST API", icon: "fas fa-plug", desc: "API Development" },
-            { name: "JavaScript", icon: "fab fa-js", desc: "Programming Language" },
-            { name: "Tailwind CSS", icon: "fas fa-paint-brush", desc: "CSS Framework" }
+            { name: "JavaScript", icon: "fab fa-js", desc: "Programming language" },
+            { name: "React.js", icon: "fab fa-react", desc: "Frontend applications" },
+            { name: "React Native", icon: "fab fa-react", desc: "Cross-platform mobile apps" },
+            { name: "Node.js", icon: "fab fa-node-js", desc: "Backend runtime" },
+            { name: "Express.js", icon: "fas fa-server", desc: "Backend APIs" },
+            { name: "MongoDB", icon: "fas fa-database", desc: "Data modeling and queries" },
+            { name: "MySQL", icon: "fas fa-database", desc: "Relational database" },
+            { name: "Redux", icon: "fas fa-layer-group", desc: "State management" },
+            { name: "REST APIs", icon: "fas fa-plug", desc: "API integration and testing" },
+            { name: "JWT & RBAC", icon: "fas fa-shield-alt", desc: "Authentication and access control" },
+            { name: "Tailwind CSS", icon: "fas fa-paint-brush", desc: "Responsive UI styling" },
+            { name: "TypeScript", icon: "fas fa-code", desc: "Typed application development" },
+            { name: "Expo", icon: "fas fa-mobile-alt", desc: "React Native development" },
+            { name: "Postman / Swagger", icon: "fas fa-vial", desc: "API testing and documentation" },
+            { name: "Git & GitHub", icon: "fab fa-github", desc: "Version control and collaboration" },
+            { name: "Razorpay & Webhooks", icon: "fas fa-credit-card", desc: "Payment integration" }
         ],
         projects: [
-    {
-        name: "ShoppyGlobe E-Commerce Application",
-        detail: "Built a responsive e-commerce platform using React, Redux, React Router, and API integration. Features include product browsing, cart management, and seamless shopping experience.",
-        tags: ["React", "Redux", "JavaScript", "API"]
-    },
-    {
-        name: "ShoppyGlobe REST API",
-        detail: "Developed scalable REST APIs using Node.js, Express.js, and MongoDB. Implemented JWT authentication, user management, and persistent shopping cart functionality.",
-        tags: ["Node.js", "Express.js", "MongoDB", "JWT"]
-    },
-    {
-        name: "YouTube-Inspired Platform",
-        detail: "Built a full-stack video-sharing platform using the MERN stack with secure authentication, video uploads, likes, comments, and sharing features.",
-        tags: ["MERN", "MongoDB", "React", "JWT"]
-    },
-    {
-        name: "Weather Forecast Application",
-        detail: "Interactive weather application providing real-time weather updates using external APIs with responsive UI and dynamic data rendering.",
-        tags: ["JavaScript", "API", "HTML", "CSS"]
-    },
-    {
-        name: "Personal Portfolio Website",
-        detail: "Responsive portfolio website showcasing projects, skills, certifications, and professional achievements with modern UI design.",
-        tags: ["HTML", "CSS", "JavaScript"]
-    }
-]
+            { name: "WorkSphere — Multi-Tenant HR & Operations Suite", detail: "Built a multi-tenant ERP SaaS platform with JWT authentication, role-based access control, and tenant-specific data isolation. Developed REST APIs and a responsive dashboard for employee, project, task, attendance, payroll, and leave workflows.", tags: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit", "JWT", "RBAC"] },
+            { name: "E-commerce Website", detail: "Developed product, category, and brand APIs, admin management endpoints, and a React storefront. Designed MongoDB schemas and indexes and implemented image upload and optimization using Multer and Sharp.", tags: ["React", "Redux", "Node.js", "MongoDB", "Multer", "Sharp"] },
+            { name: "YouTube-Inspired Platform", detail: "Created a responsive MERN video-sharing platform with video uploads, secure JWT authentication, and user interactions including likes, comments, and sharing.", tags: ["React", "Vite", "Node.js", "MongoDB", "JWT", "Tailwind CSS"] },
+            { name: "Weather Forecast Application", detail: "Built a responsive weather app that fetches real-time, location-specific forecasts from the OpenWeatherMap API and dynamically renders results using asynchronous JavaScript.", tags: ["JavaScript", "OpenWeatherMap API", "HTML", "CSS", "Tailwind CSS"] }
+        ]
     },
     python: {
-        title: "Python & AI Developer",
-        desc: "Building intelligent systems with Machine Learning, NLP, and data-driven solutions",
+        title: "Python & AI/ML Developer",
+        desc: "Combining software development, Python, and NLP to build practical data-driven applications",
         skills: [
-            { name: "Python", icon: "fab fa-python", desc: "Backend Language" },
-            { name: "Machine Learning", icon: "fas fa-brain", desc: "AI/ML" },
-            { name: "NLP", icon: "fas fa-language", desc: "Text Processing" },
-            { name: "SQL", icon: "fas fa-database", desc: "Database" },
-            { name: "Azure", icon: "fab fa-microsoft", desc: "Cloud Platform" },
-            { name: "TensorFlow", icon: "fas fa-project-diagram", desc: "ML Framework" }
+            { name: "Python", icon: "fab fa-python", desc: "Programming and scripting" },
+            { name: "Java", icon: "fab fa-java", desc: "Core logic development" },
+            { name: "SQL", icon: "fas fa-database", desc: "Database management" },
+            { name: "NLP", icon: "fas fa-language", desc: "Text and sentiment analysis" },
+            { name: "Machine Learning", icon: "fas fa-brain", desc: "Recommendation systems" },
+            { name: "REST APIs", icon: "fas fa-plug", desc: "Backend integration" },
+            { name: "MySQL", icon: "fas fa-database", desc: "Relational data" },
+            { name: "Git & GitHub", icon: "fab fa-github", desc: "Version control" }
         ],
         projects: [
-            { 
-                name: "Movie Recommendation System", 
-                detail: "Advanced sentiment analysis on micro-blogging data using NLP and collaborative filtering algorithms.",
-                tags: ["Python", "Machine Learning"]
-            },
-            { 
-                name: "Agri-Crop Analysis System", 
-                detail: "ML-driven soil and mineral analysis platform for precision agriculture with predictive modeling.",
-                tags: ["Python", "TensorFlow", "Azure"]
-            },
-            { 
-                name: "Fastag Fuel Automation", 
-                detail: "Automated petrol pump solution using Python, IoT sensors, and real-time payment processing.",
-                tags: ["Python", "IoT"]
-            },
-            { 
-                name: "AI Chatbot Assistant", 
-                detail: "Intelligent conversational agent powered by NLP with context awareness and multi-language support.",
-                tags: ["Python", "NLP", "TensorFlow"]
-            }
+            { name: "Movie Recommendation System", detail: "Developed during a virtual internship at Path Creators, using sentiment analysis of micro-blogging data and NLP techniques, with Java core logic and SQL database management.", tags: ["Java", "NLP", "Sentiment Analysis", "SQL"] },
+            { name: "WorkSphere — Multi-Tenant HR & Operations Suite", detail: "Built a multi-tenant ERP platform with tenant-specific data isolation, JWT authentication, RBAC, and management workflows for employees, projects, tasks, attendance, payroll, and leave.", tags: ["Node.js", "MongoDB", "REST APIs", "JWT", "RBAC"] },
+            { name: "E-commerce Website", detail: "Created backend APIs for products, categories, and brands, plus admin CRUD endpoints and an image upload/optimization workflow.", tags: ["Node.js", "Express", "MongoDB", "Multer", "Sharp"] },
+            { name: "Weather Forecast Application", detail: "Built a responsive interface that retrieves real-time weather data from a third-party API and renders results dynamically.", tags: ["JavaScript", "API", "HTML", "CSS"] }
         ]
     }
 };
@@ -87,8 +59,8 @@ function loadProfile(type) {
     document.getElementById('contact-title').innerText = profile.title;
     
     const descText = type === 'mern' 
-        ? "With expertise in modern web technologies, skilled in React, Node.js, Express, and MongoDB. Passionate about building scalable web applications."
-        : "With expertise in Python, Machine Learning, and AI/ML technologies. Skilled in building intelligent systems and data-driven solutions.";
+        ? "Full-Stack Developer experienced with React, React Native, Expo, Node.js, Express, MongoDB, REST API integrations, and secure role-based workflows."
+        : "Software developer with experience in Python, Java, SQL, NLP, sentiment analysis, and full-stack application development.";
     document.getElementById('contact-desc').innerText = descText;
 
     // Load Skills with horizontal scroll
@@ -106,7 +78,7 @@ function loadProfile(type) {
     projectGrid.innerHTML = profile.projects.map(p => `
         <div class="project-card">
             <div class="project-image">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231a1a1a' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' fill='%23444' font-size='60' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3E${p.name.split(' ')[0]}%3C/text%3E%3C/svg%3E" alt="${p.name}">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%231a1a1a' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' fill='%23444' font-size='60' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3E${p.name.split(' ')[0].replace(/[^a-zA-Z0-9-]/g, '')}%3C/text%3E%3C/svg%3E" alt="${p.name}">
             </div>
             <div class="project-content">
                 <h3 class="project-title">${p.name}</h3>
