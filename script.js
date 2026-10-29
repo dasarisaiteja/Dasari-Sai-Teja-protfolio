@@ -32,7 +32,6 @@ const data = {
         desc: "Combining software development, Python, and NLP to build practical data-driven applications",
         skills: [
             { name: "Python", icon: "fab fa-python", desc: "Programming and scripting" },
-            { name: "python", icon: "fab fa-python", desc: "Core logic development" },
             { name: "SQL", icon: "fas fa-database", desc: "Database management" },
             { name: "NLP", icon: "fas fa-language", desc: "Text and sentiment analysis" },
             { name: "Machine Learning", icon: "fas fa-brain", desc: "Recommendation systems" },
